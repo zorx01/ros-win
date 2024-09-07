@@ -27,7 +27,7 @@ This script automates the setup process for ROS (Robot Operating System) on Wind
 1. Download and Run the script:
 
    ```powershell
-    iex "& { $(iwr -useb 'https://raw.githubusercontent.com/zorx01/ros-windows-setup/main/setup-ros.ps1') }"
+    iex "& { $(iwr -useb 'https://raw.githubusercontent.com/zorx01/ros-win/main/setup-ros.ps1') }"
    ```
 
 ## Usage
