@@ -75,7 +75,8 @@ function Setup-ROS {
     docker pull $ImageName
     
     Write-Host "Running the Docker container..."
-    docker run -it --name ros_$Version -e DISPLAY=host.docker.internal:0.0 $ImageName
+    docker run -it --name ros_$Version -e DISPLAY=host.docker.internal:0.0 $ImageName /bin/bash -c "echo 'source /opt/ros/$Version/setup.bash' >> ~/.bashrc && bash"
+
 }
 
 # Main script
