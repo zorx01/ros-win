@@ -11,10 +11,28 @@ This script automates the setup process for ROS (Robot Operating System) on Wind
 - Allows selection of ROS version (Noetic, Foxy, or Humble)
 - Configures ROS environment in a Docker container with GUI capabilities
 
+Here's the updated **Prerequisites** section based on your instructions:
+
+---
+
 ## Prerequisites
 
 - Windows 10 or later
 - PowerShell 5.1 or later
+- **WSL2 (Windows Subsystem for Linux)**:
+   - Install WSL2 using the following command:
+     ```powershell
+     wsl --install --no-distribution
+     ```
+   - After installation, restart your system to apply the changes.
+- **Docker Desktop for Windows**:
+   - Download and install Docker from the [official website](https://www.docker.com/products/docker-desktop) after WSL2 is set up.
+- **XServer for Windows**:
+   - Install [XLaunch](https://sourceforge.net/projects/vcxsrv/) to enable GUI support.
+
+---
+
+This makes the steps clearer for setting up WSL2, Docker, and XServer before running the ROS setup script.
 
 ## Quick Start
 
