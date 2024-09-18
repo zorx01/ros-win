@@ -21,6 +21,7 @@ Here's the updated **Prerequisites** section based on your instructions:
 - PowerShell 5.1 or later
 - **WSL2 (Windows Subsystem for Linux)**:
    - Install WSL2 using the following command:
+     
      ```powershell
      wsl --install --no-distribution
      ```
@@ -69,11 +70,12 @@ After running the setup script, you can use the following commands to manage you
    ```powershell
    docker stop ros_humble
    ```
+   
+## 🚨 **Important Notes**
 
-## Important Notes
+- **Make sure to launch XLaunch and set the display number to 0 before starting your ROS Docker container.**
+- **Run XLaunch every time before using the ROS GUI applications.**
 
-- Make sure to launch XLaunch and set the display number to 0 before starting your ROS Docker container.
-- Run XLaunch every time before using the ROS GUI applications.
 
 ## Troubleshooting
 
